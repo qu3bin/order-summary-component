@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 450px;
+    height: 700px;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 55px 50px;
+}
+
+.bold {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.summary h1 {
+    font-size: 1.7em;
+}
+
+.light {
+    color: hsl(224, 23%, 55%);
+}
+
+.summary p {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin: 20px 0px 30px 0px;
+    padding: 25px;
+}
+
+.plan-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.plan-price {
+    margin-left: 20px;
+}
+
+.plan h2 {
+    font-size: 1em;
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.plan a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+}
+
+.order button {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 5px 15px hsl(224, 23%, 55%);
+}
+
+.order button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.order a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.order a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.below-em {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+    .container {
+        max-width: 100%;
+        width: 80%;
+        max-height: 100%;
+        height: 95%;
+    }
+    .header img {
+        max-width: 100%;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .plan {
+        width: 100%;
+        font-size: 0.7em;
+    }
+}
